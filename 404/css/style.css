@@ -1,0 +1,92 @@
+@import 'https://fonts.googleapis.com/css?family=Oxygen|Raleway:500:300|Dosis:400';
+*{margin: 0; padding: 0}
+body {
+  background-color: #F9F9F9
+}
+.not-found-page > section {
+  width: 90%;
+  padding-bottom: 500px;
+  margin: 0 auto
+}
+.not-found-page > section > img {
+  position: absolute;
+  top: 50px;
+  width: 300px;
+  height: 500px
+}
+.not-found-page > section > div {
+  position: absolute;
+  top: 150px;
+  left: 555px;
+  color: #444;
+  width: auto
+}
+.not-found-page > section > div > h1 {
+  font-family: 'Raleway';
+  font-size: 60px;
+  font-weight: lighter;
+  margin-bottom: 30px
+}
+.not-found-page > section > div > p {
+  text-transform: capitalize;
+  font-family: 'Dosis';
+  font-weight: bold;
+  font-size: 19px
+}
+.not-found-page > section > div > p > a {
+  text-decoration: none;
+  color: #008F32
+}
+.not-found-page > section > div > a > .InCorrHome, .not-found-page > section > div > a > .InCorrContactus {
+  outline: none;
+
+  padding: 13px 35px;
+  color: #666;
+  background-color: #f1f1f1;
+  font-size: 17px;
+  font-family: 'Oxygen';
+  border: 1px solid #9CAAB1;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-left: 33px;
+  transition: background-color .7s ease, border-color .7s ease
+}
+.not-found-page > section > div > a > .InCorrHome {
+  position: absolute;
+  top: 300px;
+  left: 200px;
+}
+.not-found-page > section > div > a > .InCorrContactus {
+  position: absolute;
+  top: 300px;
+  left: 400px;
+}
+.not-found-page > section > div > a > .InCorrHome:hover, .not-found-page > section > div > a > .InCorrContactus:hover {
+  background-color: #FFF;
+  border-color: #666
+}
+.not-found-page > footer {
+  margin-top: 50px; 
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  color: #444;
+  border-top: 2px dashed #285065;
+  background-color: #9bb7c5;
+  padding: 15px 40px;
+  font-size: 19px;
+  font-family: 'Raleway';
+}
+.not-found-page > footer > p:last-child {
+  margin-top: 15px;
+  font-size: 15px
+}
+.not-found-page > footer > p:last-child > span {
+  padding: 5px 10px;
+  color: #796A8C;
+  font-weight: bold;
+  border: 1px dashed #555;
+  border-radius: 5px;
+}
