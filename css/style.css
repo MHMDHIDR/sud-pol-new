@@ -8,9 +8,13 @@
    Base Styles and Bootstrap Modifications
    ========================================================================== */
 
-html, button, input, select, textarea {
+html,
+button,
+input,
+select,
+textarea {
   color: #222;
-  direction: rtl
+  direction: rtl;
 }
 
 body {
@@ -36,7 +40,18 @@ body {
   text-shadow: none;
 }
 
-.col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9 {
+.col-lg-1,
+.col-lg-10,
+.col-lg-11,
+.col-lg-12,
+.col-lg-2,
+.col-lg-3,
+.col-lg-4,
+.col-lg-5,
+.col-lg-6,
+.col-lg-7,
+.col-lg-8,
+.col-lg-9 {
   float: right;
 }
 
@@ -68,19 +83,20 @@ img {
 textarea {
   resize: vertical;
   min-height: 200px;
-  max-height: 700px
+  max-height: 700px;
 }
 
 /* ==========================================================================
    General styles
    ========================================================================== */
 
-html, body {
-  height: 100%
+html,
+body {
+  height: 100%;
 }
 
 body {
-  font-family: 'Amiri', 'Changa', "Raleway", sans-serif;
+  font-family: "Amiri", "Changa", "Raleway", sans-serif;
   font-weight: 300;
   font-size: 21px;
   color: #555;
@@ -101,12 +117,25 @@ body {
   background: #1abc9c;
 }
 
+.modal-header .close {
+  line-height: 1.5;
+  margin: 0 0.7rem;
+  background-color: #fff;
+  padding: 0 1rem;
+  border-radius: 1rem;
+  outline: none;
+}
+
 .modal-header h4 {
   color: white;
 }
 
 .modal-footer {
   background: #2b2b2b;
+}
+
+.modal-body .img-responsive {
+  width: 100%;
 }
 
 .navbar-default {
@@ -119,13 +148,13 @@ body {
   border: 0px solid transparent;
 }
 
-.navbar-nav>li {
+.navbar-nav > li {
   float: right;
   font-size: 15px;
-  font-family: 'Changa'
+  font-family: "Changa";
 }
 
-.navbar-default .navbar-nav>li>a:hover {
+.navbar-default .navbar-nav > li > a:hover {
   background-color: #e7e7e7 !important;
   color: #555 !important;
 }
@@ -138,19 +167,19 @@ body {
 .img-circle {
   border-radius: 50%;
   background-color: #fff;
-  border: 3px solid #d3eae6
+  border: 3px solid #d3eae6;
 }
 
 .fr {
   /* Float Right */
-  float: right !important
+  float: right !important;
 }
 
 .fl {
   /* Float Left */
   float: left !important;
-  direction: ltr
-} 
+  direction: ltr;
+}
 
 hr {
   position: relative;
@@ -177,8 +206,13 @@ a img {
 
 /* Titles */
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Changa', "Raleway", sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Changa", "Raleway", sans-serif;
   font-weight: 300;
   color: #333;
 }
@@ -187,7 +221,6 @@ h1, h2, h3, h4, h5, h6 {
 
 p {
   line-height: 40px;
-  margin-bottom: 25px;
 }
 
 .centered {
@@ -210,7 +243,7 @@ em {
 pre {
   background: #ebebeb;
   border: none;
-  font-family: 'Changa', "Raleway", sans-serif;
+  font-family: "Changa", "Raleway", sans-serif;
   font-size: 16px;
   color: #666;
   padding: 20px;
@@ -221,7 +254,8 @@ small {
   font-size: 12px;
 }
 
-blockquote, blockquote p {
+blockquote,
+blockquote p {
   line-height: 28px;
   color: #999;
   font-weight: 300;
@@ -246,7 +280,7 @@ blockquote cite {
 }
 
 blockquote cite:before {
-  content: "-- "
+  content: "-- ";
 }
 
 /* Images */
@@ -267,13 +301,15 @@ a {
   transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #c0392b;
   text-decoration: none;
   outline: 0;
 }
 
-a:before, a:after {
+a:before,
+a:after {
   -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
   -moz-transition: color 0.1s ease-in, background 0.1s ease-in;
   -ms-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -286,22 +322,11 @@ a:before, a:after {
    ========================================================================== */
 
 #headerwrap {
-  background: url(../img/header_bg.jpg) no-repeat center top;
-  margin-top: -50px;
-  padding-top: 120px;
-  text-align: center;
-  background-attachment: relative;
-  background-position: center center;
-  min-height: 700px;
-  width: 100%;
-  -webkit-background-size: 100%;
-  -moz-background-size: 100%;
-  -o-background-size: 100%;
-  background-size: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background: url("../img/header_bg.jpg") center / cover no-repeat fixed;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #headerwrap h1 {
@@ -390,7 +415,6 @@ a:before, a:after {
 }
 /* Contact Us Form End */
 
-
 /* MOUSE Style Start */
 .mouse {
   width: 26px;
@@ -421,7 +445,8 @@ a:before, a:after {
 }
 
 @-webkit-keyframes scroll {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
     transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
   }
@@ -437,7 +462,8 @@ a:before, a:after {
   }
 }
 @keyframes scroll {
-  0%, 20% {
+  0%,
+  20% {
     -webkit-transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
     transform: translateY(0px) scaleY(1) scaleX(1) translateZ(0px);
   }
@@ -454,7 +480,6 @@ a:before, a:after {
 }
 
 /* MOUSE Style End */
-
 
 /* ==========================================================================
    Box Sections
@@ -475,7 +500,7 @@ a:before, a:after {
   width: 100%;
   display: table;
   max-height: 450px;
-  border-bottom: 2px solid #E6EAED;
+  border-bottom: 2px solid #e6eaed;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -514,16 +539,15 @@ a:before, a:after {
 /* Section Dividers Backgrounds */
 
 .visionBg {
-  background-image: url('../img/bg/visionBg.jpg')
+  background-image: url("../img/bg/visionBg.jpg");
 }
 
 .goalsBg {
-  background-image: url('../img/bg/goalsBg.jpg')
+  background-image: url("../img/bg/goalsBg.jpg");
 }
 
-
 .headerTitle {
-  font-family: 'Changa', sans-serif;
+  font-family: "Changa", sans-serif;
   font-size: 25px;
   font-weight: bold;
   color: #fff;
@@ -562,7 +586,7 @@ a:before, a:after {
 }
 
 .service-active p {
-  font-family: 'Changa', "Raleway", sans-serif;
+  font-family: "Changa", "Raleway", sans-serif;
   padding-top: 10px;
 }
 
@@ -570,7 +594,7 @@ a:before, a:after {
   padding: 15px 20px;
   background: #e6eaed;
   display: block;
-  height: auto
+  height: auto;
 }
 
 .service-content p:last-child {
@@ -634,7 +658,8 @@ a:before, a:after {
   transition: transform 0.4s;
 }
 
-.no-touch .mask figure:hover img, .mask figure.cs-hover img {
+.no-touch .mask figure:hover img,
+.mask figure.cs-hover img {
   -webkit-transform: translateY(-30px);
   -moz-transform: translateY(-30px);
   -ms-transform: translateY(-30px);
@@ -656,7 +681,8 @@ a:before, a:after {
   transition: transform 0.4s, opacity 0.1s 0.3s;
 }
 
-.mask figure:hover figcaption, .mask figure.cs-hover figcaption {
+.mask figure:hover figcaption,
+.mask figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -735,7 +761,7 @@ a:before, a:after {
 }
 
 .pricing-option .pricing-edition {
-  font-family: 'Changa';  
+  font-family: "Changa";
   text-transform: uppercase;
   display: block;
   font-size: 25px;
@@ -799,14 +825,15 @@ a:before, a:after {
 }
 
 .contact-form label {
-   color: #999;
+  color: #999;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 10px 12px;
   box-shadow: none;
   font-size: 17px;
-  font-family: 'Raleway', cursive, monospace, 'Changa';
+  font-family: "Raleway", cursive, monospace, "Changa";
   height: auto;
 }
 
@@ -814,7 +841,7 @@ a:before, a:after {
   text-align: center;
 }
 
-.contact-form .form-send button  {
+.contact-form .form-send button {
   background: #1abc9c;
   border: 0;
   padding: 10px 30px;
@@ -916,12 +943,16 @@ a:before, a:after {
   line-height: 50px;
   padding: 5px 0;
   border: 2px solid #d5e4e1;
-  border-radius: 50%
+  border-radius: 50%;
 }
 
-.back-top:hover i {top: -4px}
+.back-top:hover i {
+  top: -4px;
+}
 
-.glyphicon-chevron-up {left: 1px}
+.glyphicon-chevron-up {
+  left: 1px;
+}
 /* Copyrights */
 
 #copyrights {
@@ -948,7 +979,7 @@ a:before, a:after {
    MEDIA QUERIES
    ========================================================================== */
 
-@media screen and (max-width:1050px), screen and (max-device-width:1050px) {
+@media screen and (max-width: 1050px), screen and (max-device-width: 1050px) {
   body .header {
     background-attachment: scroll;
   }
@@ -956,13 +987,13 @@ a:before, a:after {
 
 /*ipad portrait*/
 
-@media only screen and (min-device-width:768px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
   .header {
     background-attachment: scroll;
   }
 }
 
-@media screen and (max-width:769px) {
+@media screen and (max-width: 769px) {
   #headerwrap h1 {
     font-size: 60px;
     margin-top: 60px;

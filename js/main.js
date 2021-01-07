@@ -74,6 +74,12 @@ jQuery(document).ready(function( $ ) {
     });
   });
 
+  $('a#myModalBtn').click((e) => {
+    // modal-btn clicked
+    let modelImgSrc = e.target.parentElement.previousSibling.previousSibling.currentSrc;
+    $('#myModal').find('.img-responsive').attr("src", modelImgSrc);
+  }) 
+
   // Back to Top
   $(window).scroll(function () {
 		if($(this).scrollTop() > 1200) {
